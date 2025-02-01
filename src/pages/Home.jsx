@@ -54,7 +54,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative bg-gray-900 text-white">
+      <div className="relative bg-gray-900 text-white h-dvh">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover opacity-50"
@@ -64,11 +64,22 @@ const Home = () => {
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Your Journey Begins Here
+          Wide Range of Cars
+          </h1>
+          <p className="mt-6 text-xl mb-[50px] text-gray-300 max-w-3xl">
+          From Luxury, Business to Budget-Friendly Options.
+          </p>
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Select from Variety
+          </h1>
+          <p className="mt-6 text-xl mb-[50px] text-gray-300 max-w-3xl">
+          Choose from Over 100+ Models - SUVs, Sedans, Hatchbacks, and More.
+          </p>
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Sized to Suit
           </h1>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl">
-            Experience the freedom of the road with our premium car rental service.
-            Choose from a wide range of vehicles and start your adventure today.
+          From Compact to Spacious - Drive Your Perfect Match.
           </p>
           <div className="mt-10">
             <Link
@@ -80,6 +91,22 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* explore section */}
+      <div className="bg-slate-200 w-screen flex flex-col sm:flex-row gap-5 items-center justify-between p-4">
+  <div className="relative rounded-lg border border-gray-300">
+    <img className="object-cover w-full h-full lg:h-[300px]" src="https://wallpapers.com/images/hd/gray-black-mahindra-thar-2021-p7o1s7iv5ucfgv8c.jpg" alt="" />
+  </div>
+  <div className="flex flex-col space-y-4 items-center "> {/* Added items-center */}
+    <div className="text-slate-900 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-center "> {/* Added text-center */}What</div>
+    <div className="text-blue-500 font-bold font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-center"> {/* Added text-center */}Drift</div>
+    <div className="text-slate-900 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-center"> {/* Added text-center */}would you choose?</div>
+    <div className="text-slate-600 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-center"> {/* Added text-center */}flow through air....!</div>
+  </div>
+  <Link to="/explore" className="inline-flex items-center px-6 py-3 border border-transparent rounded-md text-white bg-blue-600 hover:bg-blue-700 mr-[100px] mt-4 sm:mt-0">
+    <span className="text-base sm:text-lg md:text-xl lg:text-3xl">Explore</span>
+  </Link>
+</div>
 
       {/* Featured Cars Section */}
       <div className="bg-white py-16 sm:py-24">
